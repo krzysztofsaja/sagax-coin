@@ -1,0 +1,19 @@
+{
+  "name": "sagax-coin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "develop": "truffle develop",
+    "log": "truffle develop --log",
+    "test": "truffle test test/TestSagaxCoin.test.sol && truffle test test/sagaxcoin.test.js",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "console": "truffle console"
+  },
+  "author": "",
+  "license": "ISC"
+}
