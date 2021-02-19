@@ -1,13 +1,13 @@
-pragma solidity >=0.4.25 <0.7.0;
+pragma solidity ^0.6.2;
 
 import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
-import "../contracts/SagaxCoin.sol";
+import "../contracts/SajCoin.sol";
 
-contract TestSagaxCoin {
+contract TestSajCoin {
 
   function testInitialBalanceUsingDeployedContract() public {
-    SagaxCoin meta = SagaxCoin(DeployedAddresses.SagaxCoin());
+    SajCoin meta = SajCoin(DeployedAddresses.SajCoin());
 
     uint expected = 10000;
 
@@ -15,11 +15,11 @@ contract TestSagaxCoin {
   }
 
   function testInitialBalanceWithNewSagaxCoin() public {
-    SagaxCoin meta = new SagaxCoin();
+    SajCoin meta = new SajCoin(1000);
 
-    uint expected = 10000;
+    uint expected = 1000;
 
-    Assert.equal(meta.getBalance(tx.origin), expected, "Owner should have 10000 SagaxCoin initially");
+    Assert.equal(meta.getBalance(tx.origin), expected, "Owner should have 1000 SagaxCoin initially");
   }
 
 }

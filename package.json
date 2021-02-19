@@ -9,11 +9,16 @@
   "scripts": {
     "develop": "truffle develop",
     "log": "truffle develop --log",
-    "test": "truffle test test/TestSagaxCoin.test.sol && truffle test test/sagaxcoin.test.js",
+    "test": "true",
     "compile": "truffle compile",
     "migrate": "truffle migrate",
     "console": "truffle console"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.4.0",
+    "@openzeppelin/contracts-upgradeable": "^3.4.0",
+    "web3": "^1.3.4"
+  }
 }
