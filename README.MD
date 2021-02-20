@@ -1,3 +1,3 @@
-# Sagax Coin
+# SajCoin Coin
 ### The future of finance
-Testing Ethereum Smart contracts tolling 
+Testing ENV Smart contracts tolling 

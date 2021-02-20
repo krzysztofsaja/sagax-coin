@@ -10,3 +10,5 @@ types
 # buidler
 artifacts
 cache
+env.json
+.env
