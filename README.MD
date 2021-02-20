@@ -1,3 +1,3 @@
 # SajCoin Coin
 ### The future of finance
-Testing ENV Smart contracts tolling 
+Testing EVM Smart contracts tools 
